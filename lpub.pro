@@ -7,7 +7,7 @@ DEPENDPATH += . \
     rcc
 INCLUDEPATH += .
 MOC_DIR = ./moc
-OBJECTS_DIR = ./objs
+OBJECTS_DIR = ./obj
 RCC_DIR = ./rcc
 macx { 
     ICON = lpub.icns
