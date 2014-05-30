@@ -485,7 +485,7 @@ void Gui::closeEvent(QCloseEvent *event)
 void Gui::about()
 {
    QMessageBox::about(this, tr("About LPub"),
-            tr("LPub is an LDraw model parser for creating LEGO© style building instructions.\n"
+            tr("LPub is an LDraw model parser for creating building instructions.\n"
                "Version 4.0.0.3\n"
                "Copyright 2000-20014 Kevin Clague\n"
                "kevin.clague@gmail.com"));
