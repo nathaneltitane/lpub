@@ -485,7 +485,7 @@ void Gui::closeEvent(QCloseEvent *event)
 void Gui::about()
 {
    QMessageBox::about(this, tr("About LPub"),
-            tr("LPub is an LDraw model parser for creating building instructions.\n"
+            tr("LPub is an LDraw Building Instruction Editor.\n"
                "Version 4.0.0.3\n"
                "Copyright 2000-20014 Kevin Clague\n"
                "kevin.clague@gmail.com"));
@@ -861,7 +861,7 @@ void Gui::createDockWindows()
 
 void Gui::readSettings()
 {
-    QSettings settings(LPUB, "LEGO Building Instruction Tool");
+    QSettings settings(LPUB, "LDraw Building Instruction Editor");
     QPoint pos = settings.value("pos", QPoint(200, 200)).toPoint();
     QSize size = settings.value("size", QSize(400, 400)).toSize();
     resize(size);

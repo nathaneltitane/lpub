@@ -271,7 +271,7 @@ void Gui::setCurrentFile(const QString &fileName)
 {
   QString shownName;
   if (fileName.size() == 0) {
-    shownName = "An LDraw Building Instruction Editor";
+    shownName = "LDraw Building Instruction Editor";
   } else {
     QFileInfo fileInfo(fileName);
     
