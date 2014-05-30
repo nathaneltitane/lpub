@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>images/actual.png</file>
+        <file>images/copy.png</file>
+        <file>images/cut.png</file>
+        <file>images/editundo.png</file>
+        <file>images/editredo.png</file>
+        <file>images/first.png</file>
+        <file>images/fitPage.png</file>
+        <file>images/fitVisible.png</file>
+        <file>images/fitWidth.png</file>
+        <file>images/last.png</file>
+        <file>images/next.png</file>
+        <file>images/open.png</file>
+        <file>images/paste.png</file>
+        <file>images/prev.png</file>
+        <file>images/pdf_logo.png</file>
+        <file>images/redraw.png</file>
+        <file>images/save.png</file>
+        <file>images/zoomin.png</file>
+        <file>images/zoomout.png</file>
+    </qresource>
+</RCC>
