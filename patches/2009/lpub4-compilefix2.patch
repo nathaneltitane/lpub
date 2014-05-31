@@ -1,0 +1,26 @@
+Index: LPub4/lpub.h
+===================================================================
+--- LPub4.orig/lpub.h
++++ LPub4/lpub.h
+@@ -588,7 +588,7 @@ private:    
+     QGraphicsScene *scene,
+     bool            printing);
+ 
+-  int Gui::getBOMParts(
++  int getBOMParts(
+     Where           current,
+     QStringList &csiParts);
+ 
+Index: LPub4/pliglobals.cpp
+===================================================================
+--- LPub4.orig/pliglobals.cpp
++++ LPub4/pliglobals.cpp
+@@ -41,7 +41,7 @@ public:
+   MetaGui *scale;
+   bool     bom;
+ 
+-  GlobalPliPrivate(QString &_topLevelFile, Meta &_meta, bool &_bom = false)
++  GlobalPliPrivate(QString &_topLevelFile, Meta &_meta, bool _bom = false)
+   {
+     topLevelFile = _topLevelFile;
+     meta = _meta;

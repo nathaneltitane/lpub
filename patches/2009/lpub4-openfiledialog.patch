@@ -1,0 +1,11 @@
+--- LPub4/openclose.cpp.orig	2009-09-07 10:10:06.000000000 -0500
++++ LPub4/openclose.cpp	2009-09-07 10:10:18.000000000 -0500
+@@ -40,7 +40,7 @@
+       this,
+       tr("Open LDraw File"),
+       modelDir,
+-      tr("LDraw Files (*.DAT;*.LDR;*.MPD;*.dat;*.ldr;*.mpd)"));
++      tr("LDraw Files (*.DAT *.LDR *.MPD *.dat *.ldr *.mpd)"));
+ 
+     QFileInfo info(fileName);
+ 

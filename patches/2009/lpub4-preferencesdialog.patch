@@ -1,0 +1,21 @@
+diff -urN LPub4.orig/preferencesdialog.cpp LPub4.prefs-filter/preferencesdialog.cpp
+--- LPub4.orig/preferencesdialog.cpp	2009-09-12 10:35:40.000000000 -0500
++++ LPub4.prefs-filter/preferencesdialog.cpp	2009-09-12 11:25:23.000000000 -0500
+@@ -106,6 +106,8 @@
+ 
+ #ifdef __APPLE__
+   //dialog.setFilter("Program (*.app,*.App)");
++#elif defined(__unix__)
++  /* no filter */
+ #else
+   dialog.setFilter("Program (*.exe)");
+ #endif
+@@ -136,6 +138,8 @@
+ 
+ #ifdef __APPLE__
+   //dialog.setFilter("Program (*.app,*.App)");
++#elif defined(__unix__)
++  /* no filter */
+ #else
+   dialog.setFilter("Program (*.exe)");
+ #endif

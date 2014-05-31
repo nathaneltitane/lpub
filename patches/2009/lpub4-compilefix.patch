@@ -1,0 +1,11 @@
+--- LPub4/pointeritem.h.orig	2009-05-03 11:14:51.000000000 -0500
++++ LPub4/pointeritem.h	2009-06-18 19:46:39.000000000 -0500
+@@ -137,7 +137,7 @@
+ 
+ protected:
+   void contextMenuEvent(QGraphicsSceneContextMenuEvent *event);
+-  void CalloutPointerItem::mousePressEvent(QGraphicsSceneMouseEvent *event);
++  void mousePressEvent(QGraphicsSceneMouseEvent *event);
+ };
+ 
+ #endif

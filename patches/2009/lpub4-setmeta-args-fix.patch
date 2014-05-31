@@ -1,0 +1,13 @@
+Index: LPub4/metaitem.cpp
+===================================================================
+--- LPub4.orig/metaitem.cpp
++++ LPub4/metaitem.cpp
+@@ -1038,7 +1038,7 @@ void MetaItem::changeMargins(
+ 
+   if (ok) {
+     margin->setValues(values[0],values[1]);
+-    setMeta(topOfStep,bottomOfStep,margin,append,useTop,local);
++    setMeta(topOfStep,bottomOfStep,margin,useTop,append,local);
+   }
+ }
+ 

@@ -1,0 +1,35 @@
+--- LPub4/lpub.pro.orig	2009-06-16 07:43:23.000000000 -0500
++++ LPub4/lpub.pro	2009-06-16 07:43:43.000000000 -0500
+@@ -10,7 +10,7 @@
+ OBJECTS_DIR = ./objs
+ RCC_DIR = ./rcc
+ macx { 
+-    ICON = LPub.icns
++    ICON = lpub.icns
+     
+     # QMAKE_MAC_SDK=/Developer/SDKs/MacOSX10.4u.sdk
+     CONFIG += x86 \
+@@ -33,7 +33,7 @@
+     globals.h \
+     highlighter.h \
+     ldrawfiles.h \
+-    LPub.h \
++    lpub.h \
+     lpub_preferences.h \
+     meta.h \
+     metagui.h \
+@@ -83,7 +83,7 @@
+     formatpage.cpp \
+     highlighter.cpp \
+     ldrawfiles.cpp \
+-    LPub.cpp \
++    lpub.cpp \
+     lpub_preferences.cpp \
+     main.cpp \
+     meta.cpp \
+@@ -120,4 +120,4 @@
+     traverse.cpp \
+     undoredo.cpp \
+     textitem.cpp
+-RESOURCES += LPub.qrc
++RESOURCES += lpub.qrc

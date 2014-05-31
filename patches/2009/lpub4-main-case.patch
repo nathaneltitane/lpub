@@ -1,0 +1,11 @@
+--- LPub4/main.cpp.orig	2009-05-16 17:57:11.000000000 -0500
++++ LPub4/main.cpp	2009-05-16 17:57:47.000000000 -0500
+@@ -23,7 +23,7 @@
+ 
+ int main(int argc, char *argv[])
+ {
+-    Q_INIT_RESOURCE(LPub);
++    Q_INIT_RESOURCE(lpub);
+ 
+     QApplication app(argc, argv);
+ 	

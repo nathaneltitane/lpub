@@ -487,7 +487,7 @@ void Gui::about()
    QMessageBox::about(this, tr("About LPub"),
             tr("LPub is an LDraw Building Instruction Editor.\n"
                "Version 4.0.0.3\n"
-               "Copyright 2000-20014 Kevin Clague\n"
+               "Copyright 2000-2014 Kevin Clague\n"
                "kevin.clague@gmail.com"));
 }
 
