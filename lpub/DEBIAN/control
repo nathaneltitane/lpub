@@ -1,17 +1,18 @@
 Source: lpub
-Section: unknown
+Section: graphics
 Priority: optional
 Maintainer: Nathanel Titane <nathanel.titane@gmail.com>
-Standards-Version: 3.9.4
 Homepage: https://github.com/nathaneltitane/lpub
 Package: lpub
 Architecture: amd64
+Installed-Size: 4096
+Version: 4.0.0.3
+Replaces: lpub (<< 4.0.0.3-0)
 Depends: libqtgui4, libqtcore4, libstdc++6, libc6, libgcc1
-Description: LPub: an LDraw Building Instruction Editor
+Description: LDraw Building Instruction Editor
  LPub is an LDraw building instruction editor.
  It parses any of the supported LDraw model file formats
  to genrate a Lego-like instruction document, including steps,
  callouts, subassembly details and much more.
  For more details, please visit http://www.ldraw.org
- and http://http://lpub4.sourceforge.net.
-version: 4.0.0.3
+ and http://lpub4.sourceforge.net.
