@@ -6,7 +6,7 @@ Homepage: https://github.com/nathaneltitane/lpub
 Package: lpub
 Architecture: amd64
 Installed-Size: 4096
-Version: 4.0.0.3-1
+Version: 4.0.0.3-2
 Replaces: lpub (<< 4.0.0.3-0)
 Depends: libqtgui4, libqtcore4, libstdc++6, libc6, libgcc1
 Description: LDraw Building Instruction Editor
