@@ -54,25 +54,25 @@ EditWindow::EditWindow()
 
 void EditWindow::createActions()
 {
-    cutAct = new QAction(QIcon(":/images/cut.png"), tr("Cu&t"), this);
+    cutAct = new QAction(QIcon(":/img/png/cut.png"), tr("Cu&t"), this);
     cutAct->setShortcut(tr("Ctrl+X"));
     cutAct->setStatusTip(tr("Cut the current selection's contents to the "
                             "clipboard"));
     connect(cutAct, SIGNAL(triggered()), _textEdit, SLOT(cut()));
 
-    copyAct = new QAction(QIcon(":/images/copy.png"), tr("&Copy"), this);
+    copyAct = new QAction(QIcon(":/img/png/copy.png"), tr("&Copy"), this);
     copyAct->setShortcut(tr("Ctrl+C"));
     copyAct->setStatusTip(tr("Copy the current selection's contents to the "
                              "clipboard"));
     connect(copyAct, SIGNAL(triggered()), _textEdit, SLOT(copy()));
 
-    pasteAct = new QAction(QIcon(":/images/paste.png"), tr("&Paste"), this);
+    pasteAct = new QAction(QIcon(":/img/png/paste.png"), tr("&Paste"), this);
     pasteAct->setShortcut(tr("Ctrl+V"));
     pasteAct->setStatusTip(tr("Paste the clipboard's contents into the current "
                               "selection"));
     connect(pasteAct, SIGNAL(triggered()), _textEdit, SLOT(paste()));
 
-    redrawAct = new QAction(QIcon(":/images/redraw.png"), tr("&Redraw"), this);
+    redrawAct = new QAction(QIcon(":/img/png/redraw.png"), tr("&Redraw"), this);
     redrawAct->setShortcut(tr("Ctrl+R"));
     redrawAct->setStatusTip(tr("Redraw page"));
     connect(redrawAct, SIGNAL(triggered()), this, SLOT(redraw()));

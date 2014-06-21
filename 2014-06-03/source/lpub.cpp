@@ -557,12 +557,12 @@ void Gui::meta()
 
 void Gui::createActions()
 {
-    openAct = new QAction(QIcon(":/images/open.png"), tr("&Open..."), this);
+    openAct = new QAction(QIcon(":/img/png/open.png"), tr("&Open..."), this);
     openAct->setShortcut(tr("Ctrl+O"));
     openAct->setStatusTip(tr("Open an existing file"));
     connect(openAct, SIGNAL(triggered()), this, SLOT(open()));
 
-    saveAct = new QAction(QIcon(":/images/save.png"), tr("&Save"), this);
+    saveAct = new QAction(QIcon(":/img/png/save.png"), tr("&Save"), this);
     saveAct->setShortcut(tr("Ctrl+S"));
     saveAct->setStatusTip(tr("Save the document to disk"));
     saveAct->setEnabled(false);
@@ -573,7 +573,7 @@ void Gui::createActions()
     saveAsAct->setEnabled(false);
     connect(saveAsAct, SIGNAL(triggered()), this, SLOT(saveAs()));
 
-    printToFileAct = new QAction(QIcon(":/images/pdf_logo.png"), tr("Print to &File"), this);
+    printToFileAct = new QAction(QIcon(":/img/png/pdf_logo.png"), tr("Print to &File"), this);
     printToFileAct->setShortcut(tr("Ctrl+F"));
     printToFileAct->setStatusTip(tr("Print your document to a file"));
     printToFileAct->setEnabled(false);
@@ -611,11 +611,11 @@ void Gui::createActions()
 
     // undo/redo
 
-    undoAct = new QAction(QIcon(":/images/editundo.png"), tr("Undo"), this);
+    undoAct = new QAction(QIcon(":/img/png/editundo.png"), tr("Undo"), this);
     undoAct->setShortcut(tr("Ctrl+Z"));
     undoAct->setStatusTip(tr("Undo last change"));
     connect(undoAct, SIGNAL(triggered()), this, SLOT(undo()));
-    redoAct = new QAction(QIcon(":/images/editredo.png"), tr("Redo"), this);
+    redoAct = new QAction(QIcon(":/img/png/editredo.png"), tr("Redo"), this);
 #ifdef __APPLE__
     redoAct->setShortcut(tr("Ctrl+Shift+Z"));
 #else
@@ -672,51 +672,51 @@ void Gui::createActions()
 
     // fitWidth,fitVisible,actualSize
 
-    fitWidthAct = new QAction(QIcon(":/images/fitWidth.png"), tr("Fit Width"), this);
+    fitWidthAct = new QAction(QIcon(":/img/png/fitWidth.png"), tr("Fit Width"), this);
     fitWidthAct->setShortcut(tr("Ctrl+W"));
     fitWidthAct->setStatusTip(tr("Fit document to width"));
     connect(fitWidthAct, SIGNAL(triggered()), this, SLOT(fitWidth()));
 
-    fitVisibleAct = new QAction(QIcon(":/images/fitVisible.png"), tr("Fit Visible"), this);
+    fitVisibleAct = new QAction(QIcon(":/img/png/fitVisible.png"), tr("Fit Visible"), this);
     fitVisibleAct->setShortcut(tr("Ctrl+I"));
     fitVisibleAct->setStatusTip(tr("Fit document so whole page is visible"));
     connect(fitVisibleAct, SIGNAL(triggered()), this, SLOT(fitVisible()));
 
-    actualSizeAct = new QAction(QIcon(":/images/actual.png"),tr("Actual Size"), this);
+    actualSizeAct = new QAction(QIcon(":/img/png/actual.png"),tr("Actual Size"), this);
     actualSizeAct->setShortcut(tr("Ctrl+A"));
     actualSizeAct->setStatusTip(tr("Show document actual size"));
     connect(actualSizeAct, SIGNAL(triggered()), this, SLOT(actualSize()));
     
     // zoomIn,zoomOut
 
-    zoomInAct = new QAction(QIcon(":/images/zoomin.png"), tr("&Zoom In"), this);
+    zoomInAct = new QAction(QIcon(":/img/png/zoomin.png"), tr("&Zoom In"), this);
     zoomInAct->setShortcut(tr("Ctrl++"));
     zoomInAct->setStatusTip(tr("Zoom in"));
     connect(zoomInAct, SIGNAL(triggered()), this, SLOT(zoomIn()));
 
-    zoomOutAct = new QAction(QIcon(":/images/zoomout.png"),tr("Zoom &Out"),this);
+    zoomOutAct = new QAction(QIcon(":/img/png/zoomout.png"),tr("Zoom &Out"),this);
     zoomOutAct->setShortcut(tr("Ctrl+-"));
     zoomOutAct->setStatusTip(tr("Zoom out"));
     connect(zoomOutAct, SIGNAL(triggered()), this, SLOT(zoomOut()));
 
     // firstPage,lastPage,nextPage,previousPage
 
-    firstPageAct = new QAction(QIcon(":/images/first.png"),tr("First Page"), this);
+    firstPageAct = new QAction(QIcon(":/img/png/first.png"),tr("First Page"), this);
     firstPageAct->setShortcut(tr("Ctrl+F"));
     firstPageAct->setStatusTip(tr("Go to first page of document"));
     connect(firstPageAct, SIGNAL(triggered()), this, SLOT(firstPage()));
 
-    lastPageAct = new QAction(QIcon(":/images/last.png"),tr("Last Page"), this);
+    lastPageAct = new QAction(QIcon(":/img/png/last.png"),tr("Last Page"), this);
     lastPageAct->setShortcut(tr("Ctrl+L"));
     lastPageAct->setStatusTip(tr("Go to last page of document"));
     connect(lastPageAct, SIGNAL(triggered()), this, SLOT(lastPage()));
 
-    nextPageAct = new QAction(QIcon(":/images/next.png"),tr("&Next Page"),this);
+    nextPageAct = new QAction(QIcon(":/img/png/next.png"),tr("&Next Page"),this);
     nextPageAct->setShortcut(tr("Ctrl+N"));
     nextPageAct->setStatusTip(tr("Go to next page of document"));
     connect(nextPageAct, SIGNAL(triggered()), this, SLOT(nextPage()));
 
-    previousPageAct = new QAction(QIcon(":/images/prev.png"),tr("&Previous Page"),this);
+    previousPageAct = new QAction(QIcon(":/img/png/prev.png"),tr("&Previous Page"),this);
     previousPageAct->setShortcut(tr("Ctrl+P"));
     previousPageAct->setStatusTip(tr("Go to previous page of document"));
     connect(previousPageAct, SIGNAL(triggered()), this, SLOT(prevPage()));
