@@ -23,7 +23,6 @@
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
-#include <QtGui/QSpacerItem>
 #include <QtGui/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -59,7 +58,6 @@ public:
     QHBoxLayout *hboxLayout5;
     QRadioButton *Centimeters;
     QRadioButton *Inches;
-    QSpacerItem *spacerItem;
     QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *PreferencesDialog)
@@ -205,10 +203,6 @@ public:
 
         vboxLayout->addWidget(groupBox);
 
-        spacerItem = new QSpacerItem(371, 16, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        vboxLayout->addItem(spacerItem);
-
         buttonBox = new QDialogButtonBox(PreferencesDialog);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
@@ -226,7 +220,7 @@ public:
 
     void retranslateUi(QDialog *PreferencesDialog)
     {
-        PreferencesDialog->setWindowTitle(QApplication::translate("PreferencesDialog", "LPub Preferences", 0, QApplication::UnicodeUTF8));
+        PreferencesDialog->setWindowTitle(QApplication::translate("PreferencesDialog", "Preferences", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         pliBox_2->setToolTip(QApplication::translate("PreferencesDialog", "This directory contains the LDraw parts directory", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP

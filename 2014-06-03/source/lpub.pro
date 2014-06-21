@@ -6,9 +6,10 @@ TARGET =
 DEPENDPATH += . \
     rcc
 INCLUDEPATH += .
-MOC_DIR = ./moc
-OBJECTS_DIR = ./objs
-RCC_DIR = ./rcc
+MOC_DIR = ./build/moc
+OBJECTS_DIR = ./build/obj
+RCC_DIR = ./build/rcc
+DESTDIR = ./build
 macx { 
     ICON = lpub.icns
     
